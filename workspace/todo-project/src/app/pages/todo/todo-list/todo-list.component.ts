@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-
+  name = 'Fernando';
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
