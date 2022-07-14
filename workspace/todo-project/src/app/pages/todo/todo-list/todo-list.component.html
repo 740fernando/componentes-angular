@@ -1,4 +1,4 @@
-<h1>Bem Vindo, {{name}}</h1>
+ <h1>Bem Vindo, {{name}}</h1>
 <mat-card class="wrapper">
     <mat-card-header>
         <mat-card-title>
@@ -8,7 +8,7 @@
     <mat-card-content>
         <mat-form-field class="form-field">
             <mat-label>Tarefas : </mat-label>
-            <input type="text" matInput placeholder="Digite sua tarefa">
+            <input type="text" #todo matInput placeholder="Digite sua tarefa" (keyup.enter)="addTodo(todo.value); todo.value=''">
         </mat-form-field>
     </mat-card-content>
 </mat-card>
