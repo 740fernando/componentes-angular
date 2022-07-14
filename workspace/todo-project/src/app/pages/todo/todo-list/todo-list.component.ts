@@ -17,6 +17,6 @@ export class TodoListComponent implements OnInit {
   addTodo(title : string){
     const id = this.todos.length+1;
     this.todos.push(new Todo(id, title, false));
-    console.log(this.todos)
+    console.log(this.todos);
   }
 }
