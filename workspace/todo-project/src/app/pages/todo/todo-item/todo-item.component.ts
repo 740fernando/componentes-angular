@@ -12,6 +12,7 @@ export class TodoItemComponent implements OnInit {
     title:'',
     done: false,
   };
+  done = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -22,7 +23,7 @@ export class TodoItemComponent implements OnInit {
   }
 
   markAsDone(){
-    console.log(this.todo);
+    debugger;
+   this.done=true;
   }
-
 }
